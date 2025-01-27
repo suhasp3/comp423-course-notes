@@ -46,7 +46,8 @@ When doing this, replace `<your-username>` with your GitHub username.
 
 2. Check what your repository's default branch is using `git branch`. The default branch should be `main`.
     * If its not, run the following command to rename it to main: `git branch -M main`.
-
+!!! note 
+    Check your default branch name with the subcommand git branch. The default branch is usually main, but older versions of git had the default branch named master.
 3. Push your local commits to the GitHub repository
 ```bash
 git push --set-upstream origin main
@@ -62,6 +63,9 @@ Development Containers are important because it standardizes the envrionment for
 2. In VSCode, click extensions and install the extension called Dev Containers
 3. Create a `.devcontainer` directory at the root of your project and add `devcontainer.json` inside that directory
 The configuration should be `.devcontainer/devcontainer.json`
+!!! info
+    The devcontainer.json file defines the configuration of our development environment.
+
 4. In the file you just created, add the following code
 ```json 
 {
@@ -90,7 +94,8 @@ Initialize the Go Module by running:
 ```bash
 go mod init github.com/<your-username>/go-tutorial
 ```
-This will intialize a `go.mod` file in the current directory which defines the module's properties and dependencies
+!!! note
+    This will intialize a `go.mod` file in the current directory which defines the module's properties and dependencies
 
 Now we need to write our "Hello COMP423" program. Start by creating a file named `main.go` at the root of your project.
 [Here] (https://go.dev/doc/) is the documentation for working with Go but I will provide you with the code for now below:
@@ -105,6 +110,10 @@ func main() {
 }
 ```
 Now that our program is written, we can run it!
+!!! info
+    - package main: Defines the main package. Where execution begins.
+    - import "fmt": Imports the fmt (format) package for formatted I/O.
+    - func main() {...}: Entry point for our Go program.
 
 ### Part 2 - Running the main.go file 
 To run the Go program, use the `go run` subcommand:
@@ -117,19 +126,20 @@ The output should be
 Hello COMP423!
 ```
 
-You could also create an executable file by doing `go build main.go`
+!!! note
+    You could also create an executable file by doing `go build main.go`
 
-This generates an executable `main` which you can run with the following:
-```bash
-./main
-```
+    This generates an executable `main` which you can run with the following:
+    ```bash
+    ./main
+    ```
 
-The output should once again be:
-```bash
-Hello COMP423!
-```
-
-The difference with using the `build` subcommand is that it creates an executable binary file  that you can run multiple times later, similar to `gcc` from COMP211. Just using `run` though compiles and immediately runs the code. 
+    The output should once again be:
+    ```bash
+    Hello COMP423!
+    ```
+!!! info
+    The difference with using the `build` subcommand is that it creates an executable binary file  that you can run multiple times later, similar to `gcc` from COMP211. Just using `run` though compiles and immediately runs the code. 
 
 ## **Conclusion**
 You are now complete with the tutorial for setting up a DevContainer for Go and then writing a simple Go program. Congratulations!
