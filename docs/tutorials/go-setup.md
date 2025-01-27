@@ -88,7 +88,7 @@ Now that your Dev Container is set up, lets create a new Go Project
 
 Initialize the Go Module by running: 
 ```bash
-go mod init
+go mod init github.com/<your-username>/go-tutorial
 ```
 This will intialize a `go.mod` file in the current directory which defines the module's properties and dependencies
 
@@ -109,15 +109,32 @@ Now that our program is written, we can run it!
 ### Part 2 - Running the main.go file 
 To run the Go program, use the `go run` subcommand:
 ```bash
-go run hello.go
+go run main.go
 ```
 
 The output should be 
 ```bash
-Hello COMP423
+Hello COMP423!
 ```
 
-You could also create an executable file by doing `go build`
+You could also create an executable file by doing `go build main.go`
+
+This generates an executable `main` which you can run with the following:
+```bash
+./main
+```
+
+The output should once again be:
+```bash
+Hello COMP423!
+```
+
+The difference with using the `build` subcommand is that it creates an executable binary that you can run multiple times later but just using `run` compiles and immediately runs the code. 
+
+
+
+
+
 
 
 
