@@ -98,7 +98,7 @@ go mod init github.com/<your-username>/go-tutorial
     This will intialize a `go.mod` file in the current directory which defines the module's properties and dependencies
 
 Now we need to write our "Hello COMP423" program. Start by creating a file named `main.go` at the root of your project.
-[Here] (https://go.dev/doc/) is the documentation for working with Go but I will provide you with the code for now below:
+[Here](https://go.dev/doc/) is the documentation for working with Go but I will provide you with the code for now below:
 
 ```go
 package main
