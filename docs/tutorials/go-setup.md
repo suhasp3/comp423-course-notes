@@ -144,6 +144,8 @@ Hello COMP423!
 ## **Conclusion**
 You are now complete with the tutorial for setting up a DevContainer for Go and then writing a simple Go program. Congratulations!
 
+> Tutorial Inspiration came from https://comp423-25s.github.io/resources/MkDocs/tutorial/
+
 
 
 
