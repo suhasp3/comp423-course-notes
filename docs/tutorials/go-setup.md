@@ -129,8 +129,10 @@ The output should once again be:
 Hello COMP423!
 ```
 
-The difference with using the `build` subcommand is that it creates an executable binary that you can run multiple times later but just using `run` compiles and immediately runs the code. 
+The difference with using the `build` subcommand is that it creates an executable binary file  that you can run multiple times later, similar to `gcc` from COMP211. Just using `run` though compiles and immediately runs the code. 
 
+## **Conclusion**
+You are now complete with the tutorial for setting up a DevContainer for Go and then writing a simple Go program. Congratulations!
 
 
 
